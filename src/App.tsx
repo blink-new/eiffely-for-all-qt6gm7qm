@@ -3,6 +3,7 @@ import { ThemeProvider } from 'next-themes';
 import HomePage from './pages/HomePage';
 import ResearchPage from './pages/ResearchPage';
 import AboutPage from './pages/AboutPage';
+import UploadPage from './pages/UploadPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
@@ -40,6 +41,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage user={user} />} />
               <Route path="/research" element={<ResearchPage user={user} />} />
+              <Route path="/upload" element={<UploadPage user={user} />} />
               <Route path="/about" element={<AboutPage />} />
             </Routes>
           </main>

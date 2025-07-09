@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
-import { Search, User, Menu, Globe, BookOpen, Brain } from 'lucide-react';
+import { Search, User, Menu, Globe, BookOpen, Brain, Upload } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import blink from '../blink/client';
 
@@ -44,6 +44,12 @@ const Header = ({ user }: HeaderProps) => {
               <Search className="w-4 h-4" />
               <span>Research</span>
             </Link>
+            {user && (
+              <Link to="/upload" className="text-gray-600 hover:text-blue-600 transition-colors flex items-center space-x-1">
+                <Upload className="w-4 h-4" />
+                <span>Upload</span>
+              </Link>
+            )}
             <Link to="/about" className="text-gray-600 hover:text-blue-600 transition-colors flex items-center space-x-1">
               <Brain className="w-4 h-4" />
               <span>About TWILS</span>
@@ -84,6 +90,12 @@ const Header = ({ user }: HeaderProps) => {
                     <Search className="w-4 h-4" />
                     <span>Research</span>
                   </Link>
+                  {user && (
+                    <Link to="/upload" className="text-gray-600 hover:text-blue-600 transition-colors flex items-center space-x-2">
+                      <Upload className="w-4 h-4" />
+                      <span>Upload</span>
+                    </Link>
+                  )}
                   <Link to="/about" className="text-gray-600 hover:text-blue-600 transition-colors flex items-center space-x-2">
                     <Brain className="w-4 h-4" />
                     <span>About TWILS</span>
