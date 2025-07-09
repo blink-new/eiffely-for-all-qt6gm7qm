@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Card, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Button } from '../components/ui/button';
 import { Link } from 'react-router-dom';
@@ -9,11 +9,8 @@ import {
   BookOpen, 
   Search, 
   Sparkles,
-  Users,
   Heart,
-  Zap,
   Library,
-  GraduationCap,
   ArrowRight,
   MessageSquare,
   FileText,
